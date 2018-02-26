@@ -5,6 +5,18 @@ body,img,ul,li,a,p,h1,h2,h3,h4,h5,h6{
   border:0;
   font-family:Lato;
 }
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?892rdc');
+  src:  url('../fonts/icomoon.eot?892rdc#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?892rdc') format('truetype'),
+    url('../fonts/icomoon.woff?892rdc') format('woff'),
+    url('../fonts/icomoon.svg?892rdc#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .nav-con{
   width:100%;
   height:60px;
@@ -20,8 +32,9 @@ body,img,ul,li,a,p,h1,h2,h3,h4,h5,h6{
       width:40px;
     }
     ul{
+      display:inline-block;
       li{
-        display:inline;
+        display:inline-block;
         margin-right:20px;
         &:nth-of-type(2) a:before{
           background: #40b3b6;
@@ -56,6 +69,40 @@ body,img,ul,li,a,p,h1,h2,h3,h4,h5,h6{
             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
             transition-duration: 0.3s;
           }
+        }
+      }
+    }
+    .social{
+      display: inline-block;
+      float: right;
+      color: #fff;
+      font-size: 20px;
+      line-height: 60px;
+      ul{
+        li{
+          margin-right:0;
+          margin-left:20px;
+          font-family:icomoon;
+          height: 42px;
+          width: 20px;
+          position: relative;
+          a{
+            position: absolute;
+            display: block;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top:0;
+          }
+        }
+        .insta:before {
+          content: "\ea92";
+        }
+        .github:before {
+          content: "\eab0";
+        }
+        .linked-in:before {
+          content: "\eaca";
         }
       }
     }

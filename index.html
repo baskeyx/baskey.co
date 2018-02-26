@@ -18,10 +18,23 @@
     <div class="nav-bar">
       <ul>
         <li><a href="#">Baskey.co</a></li>
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">Art</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <!-- <li><a href="#">Art</a></li> -->
         <li><a href="#">Contact</a></li>
       </ul>
+      <div class="social">
+        <ul>
+          <li class="insta">
+            <a href="https://www.instagram.com/baskeyx/" target="_blank"></a>
+          </li>
+          <li class="linked-in">
+            <a href="https://uk.linkedin.com/in/dan-baskeyfield-01070049" target="_blank"></a>
+            </li>
+          <li class="github">
+            <a href="https://github.com/baskeyx" target="_blank"></a>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
   <div class="page-container">
@@ -32,16 +45,55 @@
       <p>Since graduating with a degree in Internet Computing I've produced work for brands such as Aston Martin, Rolls-Royce, Topshop, Ivy Park and McLaren.</p>
       <p>Over the last five years I've homed in on content delivery for fashion brands at Arcadia Group and Oasis. I've been responsible for leading projects such as the Ivy Park launch, Topshop's biannual Fashion week campaigns, and Christmas campaigns.</p>
       <p>I'm also a huge advocate of the agile methodology and working in a scrum environment. Over the year I've worked at Oasis I've introduced sprints and stand ups and currently act as Scrum Master/Product Owner developing when I can.</p>
+      <p>Contact me: <a href="mailto:dan@baskey.co">dan@baskey.co</a></p>
     </div>
   </div>
   <div class="portfolio-con section-con dark-section">
     <div class="section">
       <h2 id="portfolio">Portfolio</h2>
+      <div class="work">
+        <a href="http://baskey.co/marvel-game/" target="_blank">
+          <img src="img/marvel-cards.jpg" alt="Marvel Cards" />
+        </a>
+        <div class="portfolio-copy">
+          <a href="http://baskey.co/marvel-game/" target="_blank"><h3>Marvel Cards Beta</h3></a>
+          <p>A JavaScript side project I'm currently working on. This application pulls data from the Marvel API, the user receives a random character and can battle against a villain in top trumps style combat. I intend on building this in plain JS before looking into React components and state.</p>
+          </div>
+      </div><div class="work">
+        <a href="http://www.oasis-stores.com/gb/pantone-quiz.html" target="_blank">
+          <img src="img/pantone-quiz.jpg" alt="Pantone Quiz" />
+        </a>
+        <div class="portfolio-copy">
+          <a href="http://www.oasis-stores.com/gb/pantone-quiz.html" target="_blank"><h3>Pantone x Oasis Fashion Quiz</h3></a>
+          <p>This JavaScript quiz was build for the launch of the Pantone Colour Institute range at Oasis. The user picks options and they are served an outcome dependant on their choices. The project requirements and logic changed greatly during development but there is a simplified version on my GutHub.</p>
+        </div>
+      </div><div class="work">
+        <a href="http://www.topshop.com/en/tsuk/category/ivy-park-5242082/home?geoip=noredirect#" target="_blank"><img src="img/ivy-park.jpg" alt="Ivy Park" /></a>
+        <div class="portfolio-copy">
+          <a href="http://www.topshop.com/en/tsuk/category/ivy-park-5242082/home?geoip=noredirect#" target="_blank"><h3>Ivy Park - Launch Campaign</h3></a>
+          <p>This was a bespoke build for the launch of Ivy Park. It was built into the Arcadia CMS allowing the production team to edit and maintain it. Topshop have a different site for their mobile platform, the <a href="http://media.topshop.com/cms/pages/static/static-0000114060/static-0000114060.html">Ivy Park mobile version</a> is also available.</p>
+          </div>
+      </div><div class="work">
+        <a href="http://www.missselfridge.com/dev%20sites/denim/index.html" target="_blank"><img src="img/miss-selfridge.jpg" alt="miss Selfridge - Denim Hub" /></a>
+        <div class="portfolio-copy">
+          <a href="http://www.missselfridge.com/dev%20sites/denim/index.html" target="_blank"><h3>Miss Selfridge - Denim Hub</h3></a>
+          <p>This parallax feature was creating using the skrollr.js plugin. It was a bespoke development and was integrated into the website for the relaunch of their denim campaign.</p>
+          </div>
+      </div>
     </div>
   </div>
 
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-40849455-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-  <script src="js/script.min.js"></script>
+    gtag('config', 'UA-40849455-2');
+  </script>
+
+  <!-- <script src="js/script.min.js"></script> -->
 </body>
 
 </html>
